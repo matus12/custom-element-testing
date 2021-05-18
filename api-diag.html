@@ -339,7 +339,7 @@
             CustomElement.observeItemChanges(
                     itemDetails => receiveItemChanges(itemDetails, cancellation),
             );
-            CustomElement.observeItemChanges(console.log("ObserverdCHANGES: ", itemDetails));
+            CustomElement.observeItemChanges(itemDetails => console.log("ObserverdCHANGES: ", itemDetails));
         }
 
         function stopListening() {
